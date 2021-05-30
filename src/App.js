@@ -7,6 +7,7 @@ import Jalal from "./components/Jalal";
 import About from "./components/About";
 import Footer from "./components/footer";
 
+
 function App() {
   return (
     <div className="App">

@@ -1,0 +1,46 @@
+.home-container {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Permanent Marker", cursive;
+}
+.first-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 580px;
+}
+
+.home-side-col {
+  min-width: 35%;
+}
+
+.side-figures :nth-child(odd) {
+  margin-left: 20px;
+}
+.side-figures :nth-child(even) {
+  margin-left: 20px;
+}
+.side-caption {
+  margin-left: 3%;
+}
+
+.home-main-col {
+  max-width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-row {
+  min-height: 580px;
+}
+.extention {
+  min-height: 580px;
+  margin-bottom: 20px;
+  background-color: rgba(59, 59, 59, 0.897);
+}

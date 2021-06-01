@@ -1,11 +1,13 @@
 .home-container {
-  background-color: lightblue;
+  background-color: #a7a7a7e5;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   font-family: "Permanent Marker", cursive;
+  scroll-behavior: smooth;
 }
+
 .first-row {
   display: flex;
   flex-direction: row;
@@ -41,6 +43,97 @@
 }
 .extention {
   min-height: 580px;
-  margin-bottom: 20px;
-  background-color: rgba(59, 59, 59, 0.897);
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 2%;
+}
+.ext-text {
+  text-align: center;
+  font-family: "Ubuntu";
+  color: white;
+  font-size: 50px;
+  text-shadow: 0 5px 20px rgba(24, 24, 24, 0.945), 0 10px 20px #f3f3f3e0;
+}
+.ext-link {
+  text-decoration: none;
+}
+.ext-link:hover {
+  text-decoration: none;
+}
+.ext-text-holder {
+  min-height: 90px;
+  width: 100%;
+  background-color: #3b3b3be5;
+}
+
+.third-row {
+  min-height: 300px;
+}
+.third-row-container {
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.fourth-row {
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.fourth-row-five,
+.fourth-row-four,
+.fourth-row-three,
+.fourth-row-two,
+.fourth-row-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.react-card {
+  max-width: 200px;
+  min-height: 240px;
+  margin: 2% 2% 2% 2%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(46, 46, 46, 0.876);
+  background-color: rgba(236, 235, 234, 0.781);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.react-text {
+  text-align: center;
+}
+.last-card {
+  box-shadow: 0 0 20px rgb(206, 206, 206);
+  margin-bottom: 5%;
+}
+
+.fifth-row {
+  width: 100%;
+  min-height: 750px;
+}
+.vid-container {
+  position: absolute;
+  width: 100%;
+}
+.text {
+  min-height: 750px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0 2px 12px rgb(66, 66, 66);
+  font-family: "Ubuntu";
+  font-size: 1.4em;
 }

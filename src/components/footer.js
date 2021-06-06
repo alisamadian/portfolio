@@ -7,21 +7,9 @@ function Footer() {
     <div className="footer-container">
       <section className="footer-subscription">
         <p className="footer-subscription-heading">
-          Join Us!! It Must Be Done...
+          Join Me! It Must Be Done...
         </p>
-        <p className="footer-subscription-text">
-          You can unsubscribe at any time...
-        </p>
-        <div className="input-areas">
-          <form>
-            <input
-              className="footer-input"
-              name="email"
-              type="email"
-              placeholder="Your Email"
-            />
-          </form>
-        </div>
+        <p className="footer-subscription-text">alisamadian40@gmail.com</p>
       </section>
       <div className="footer-links">
         <div className="footer-link-wrapper">
@@ -63,7 +51,7 @@ function Footer() {
               JCI
             </Link>
           </div>
-          <small className="website-rights">JCI © 2020</small>
+          <small className="website-rights">2021</small>
           <div className="social-icons">
             <Link
               className="social-icon-link facebook"

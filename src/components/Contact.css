@@ -1,0 +1,52 @@
+.contact-container {
+  max-width: 100%;
+  min-height: 560px;
+  background-color: #a7a7a7e5;
+}
+.note {
+  margin-bottom: 4%;
+}
+.note-header {
+  color: rgb(34, 34, 34);
+  text-align: center;
+  display: block;
+  margin: 0 0 1% 0;
+  padding: 5% 0 4% 0;
+  text-shadow: 0 0px 16px rgb(246, 246, 246);
+  font-size: 3rem;
+  font-weight: bold;
+}
+.note-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.note-pic {
+  max-width: 400px;
+  transition: all 0.4s ease-in-out;
+}
+.note-pic:hover {
+  transform: scale(1.1);
+}
+.note-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.note-btn > Button {
+  width: 50%;
+  font-size: 1.5rem;
+}
+.note-form {
+  margin: 2% 0;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}

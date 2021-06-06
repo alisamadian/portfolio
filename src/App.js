@@ -2,11 +2,10 @@ import "./App.css";
 import Nav from "./components/nav";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
-import Ali from "./components/Ali";
-import Jalal from "./components/Jalal";
-import About from "./components/About";
+import Works from "./components/Works";
+import Certificates from "./components/Certificates";
+import Contact from "./components/Contact";
 import Footer from "./components/footer";
-
 
 function App() {
   return (
@@ -15,9 +14,9 @@ function App() {
         <Nav />
         <Switch>
           <Route path="/components/Home" exact component={Home} />
-          <Route path="/components/Ali" component={Ali} />
-          <Route path="/components/Jalal" component={Jalal} />
-          <Route path="/components/About" component={About} />
+          <Route path="/components/Works" component={Works} />
+          <Route path="/components/Certificates" component={Certificates} />
+          <Route path="/components/Contact" component={Contact} />
         </Switch>
         <Footer />
       </Router>

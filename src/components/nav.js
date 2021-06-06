@@ -32,7 +32,7 @@ export default function Nav() {
             className="navbar-logo"
             onClick={closeMobileMenu}
           >
-            <p>Portfolio</p>
+            <p>Welcome to my portfolio</p>
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -44,34 +44,34 @@ export default function Nav() {
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                <p>Home</p>
+                Home
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                to="/components/Ali"
+                to="/components/Works"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Ali
+                Works
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                to="/components/Jalal"
+                to="/components/Certificates"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Jalal
+                Certificates
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                to="/components/About"
+                to="/components/Contact"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                About Us
+                Contact
               </Link>
             </li>
           </ul>

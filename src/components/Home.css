@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Quicksand", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -53,7 +53,7 @@
 }
 .ext-text {
   text-align: center;
-  font-family: "Ubuntu";
+  font-family: "Quicksand", sans-serif;
   color: white;
   font-size: 50px;
   text-shadow: 0 5px 20px rgba(24, 24, 24, 0.945), 0 10px 20px #f3f3f3e0;
@@ -139,6 +139,6 @@
   align-items: center;
   color: white;
   text-shadow: 0 2px 12px rgb(66, 66, 66);
-  font-family: "Ubuntu";
+  font-family: "Quicksand", sans-serif;
   font-size: 1.4em;
 }

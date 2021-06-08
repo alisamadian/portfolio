@@ -2,6 +2,7 @@
   max-width: 100%;
   min-height: 560px;
   background-color: #a7a7a7e5;
+  font-family: "Quicksand", sans-serif;
 }
 .note {
   margin-bottom: 4%;
@@ -14,7 +15,7 @@
   padding: 5% 0 4% 0;
   text-shadow: 0 0px 16px rgb(246, 246, 246);
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 .note-container {
   display: flex;

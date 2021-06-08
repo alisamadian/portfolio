@@ -1,6 +1,11 @@
 import "./App.css";
 import Nav from "./components/nav";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import Home from "./components/Home";
 import Works from "./components/Works";
 import Certificates from "./components/Certificates";
@@ -11,6 +16,9 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Route exact path="/">
+          <Redirect to="/components/Home" />
+        </Route>
         <Nav />
         <Switch>
           <Route path="/components/Home" exact component={Home} />

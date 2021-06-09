@@ -32,7 +32,7 @@ export default function Nav() {
             className="navbar-logo"
             onClick={closeMobileMenu}
           >
-            <p>Welcome to my portfolio</p>
+            Welcome to my portfolio
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />

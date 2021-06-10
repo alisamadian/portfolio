@@ -3,10 +3,12 @@
   min-height: 560px;
   background-color: #a7a7a7e5;
   font-family: "Quicksand", sans-serif;
+  overflow: hidden;
 }
 .note {
   margin-bottom: 4%;
 }
+
 .note-header {
   color: rgb(34, 34, 34);
   text-align: center;
@@ -25,7 +27,7 @@
 }
 
 .note-pic {
-  max-width: 400px;
+  max-width: 30%;
   transition: all 0.4s ease-in-out;
 }
 .note-pic:hover {
@@ -38,7 +40,7 @@
   align-items: center;
 }
 .note-btn > Button {
-  width: 50%;
+  width: 98%;
   font-size: 1.5rem;
 }
 .note-form {

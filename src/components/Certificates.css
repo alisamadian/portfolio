@@ -6,6 +6,11 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+.certificate-motion {
+  min-height: 100vh;
+  min-width: 100%;
 }
 
 .certificate-row1,

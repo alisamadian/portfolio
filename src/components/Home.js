@@ -71,6 +71,16 @@ const hoverVariant = {
   },
 };
 
+const figureVariant = {
+  initial: {
+    rotate: -180,
+  },
+  animate: {
+    rotate: 0,
+    transition: { duration: 2 },
+  },
+};
+
 function Home() {
   return (
     <div className="home-container">
@@ -107,25 +117,31 @@ function Home() {
               </div>
               <br />
               <div className="side-caption">
-                <Figure.Caption>
-                  My first extention <br />{" "}
-                  <img src={imgside5} width={30} alt="img" />
-                </Figure.Caption>
+                Go deep <br /> <img src={imgside5} width={30} alt="img" />
               </div>
             </Figure>
           </div>
 
           <div className="home-main-col">
             <div className="main-col-fig">
-              <Figure>
-                <Figure.Image
-                  width={240}
-                  height={240}
-                  alt="240240"
-                  style={{ borderRadius: "120px" }}
+              <motion.div
+                variants={figureVariant}
+                initial="initial"
+                animate="animate"
+              >
+                <motion.img
+                  drag
+                  whileDrag={{ scale: 1.12 }}
+                  width={300}
+                  height={300}
+                  alt="300300"
+                  style={{
+                    borderRadius: "150px",
+                    cursor: "pointer",
+                  }}
                   src={imgside4}
-                ></Figure.Image>
-              </Figure>
+                ></motion.img>
+              </motion.div>
             </div>
             <div className="main-col-text">
               Hi, i'm ali samadian. i'm a React web developer.I am intrested in
@@ -165,8 +181,8 @@ function Home() {
               <Card.Body>
                 <Card.Title>HTML</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  HTML provides the basic structure of sites, which is enhanced
+                  by other technologies like CSS and JavaScript.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -184,8 +200,7 @@ function Home() {
               <Card.Body>
                 <Card.Title>CSS</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  CSS is used to control presentation, formatting, and layout.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -203,8 +218,8 @@ function Home() {
               <Card.Body>
                 <Card.Title>Java Script</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  JavaScript is used to control the behavior of different
+                  elements.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -214,71 +229,71 @@ function Home() {
           <div className="fourth-row-container">
             <div className="fourth-row-five">
               <div className="react-card">
-                <img src={imgionic} width="200px;" alt="" />
+                <img src={imgionic} width="150px;" alt="" />
                 <p className="react-text">Ionic</p>
               </div>
               <div className="react-card">
-                <img src={imgrbs} width="200px;" alt="" />
+                <img src={imgrbs} width="150px;" alt="" />
                 <p className="react-text">React bootstrap</p>
               </div>
               <div className="react-card">
-                <img src={imgrecoil} width="200px;" alt="" />
+                <img src={imgrecoil} width="150px;" alt="" />
                 <p className="react-text">Recoil</p>
               </div>
               <div className="react-card">
-                <img src={imgmui} width="200px;" alt="" />
+                <img src={imgmui} width="150px;" alt="" />
                 <p className="react-text">Material UI</p>
               </div>
               <div className="react-card">
-                <img src={imggit} width="200px;" alt="" />
+                <img src={imggit} width="150px;" alt="" />
                 <p className="react-text">git</p>
               </div>
             </div>
             <div className="fourth-row-four">
               <div className="react-card">
-                <img src={imgbootstrap} width="200px;" alt="" />
+                <img src={imgbootstrap} width="150px;" alt="" />
                 <p className="react-text">Bootstrap</p>
               </div>
               <div className="react-card">
-                <img src={imgjQuery} width="200px;" alt="" />
+                <img src={imgjQuery} width="150px;" alt="" />
                 <p className="react-text">jQuery</p>
               </div>
               <div className="react-card">
-                <img src={imgjson} width="200px;" alt="" />
+                <img src={imgjson} width="150px;" alt="" />
                 <p className="react-text">JSON</p>
               </div>
               <div className="react-card">
-                <img src={imgajax} width="200px;" alt="" />
+                <img src={imgajax} width="150px;" alt="" />
                 <p className="react-text">AJAX</p>
               </div>
             </div>
             <div className="fourth-row-three">
               <div className="react-card">
-                <img src={imgnode} width="200px;" alt="" />
+                <img src={imgnode} width="150px;" alt="" />
                 <p className="react-text">node.JS</p>
               </div>
               <div className="react-card">
-                <img src={imgmysql} width="200px;" alt="" />
+                <img src={imgmysql} width="150px;" alt="" />
                 <p className="react-text">MySQL</p>
               </div>
               <div className="react-card">
-                <img src={imgpython} width="200px;" alt="" />
+                <img src={imgpython} width="150px;" alt="" />
                 <p className="react-text">Python</p>
               </div>
             </div>
             <div className="fourth-row-two">
               <div className="react-card fourth-row-shadow-left">
-                <img src={imgdjango} width="200px;" alt="" />
+                <img src={imgdjango} width="150px;" alt="" />
                 <p className="react-text">django</p>
               </div>
               <div className="react-card fourth-row-shadow-right">
-                <img src={imgflask} width="200px;" alt="" />
+                <img src={imgflask} width="150px;" alt="" />
                 <p className="react-text">Flask</p>
               </div>
             </div>
             <div className="fourth-row-one">
               <div className="react-card last-card">
-                <img src={imgreact} width="200px;" alt="" />
+                <img src={imgreact} width="150px;" alt="" />
                 <p className="react-text">React</p>
               </div>
             </div>

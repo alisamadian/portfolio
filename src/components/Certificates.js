@@ -13,6 +13,10 @@ import imghtmlbig from "./ali/certificates/certificate-html-big.jpg";
 import imghtml from "./ali/certificates/certificate-html.jpg";
 import imgreactbig from "./ali/certificates/certificate-react-big.jpg";
 import imgreact from "./ali/certificates/certificate-react.jpg";
+import imgcssbig from "./ali/certificates/certificate-css-big.jpg";
+import imgcss from "./ali/certificates/certificate-css.jpg";
+import imgpythonbig from "./ali/certificates/certificate-python-big.jpg";
+import imgpython from "./ali/certificates/certificate-python.jpg";
 
 const containerVariant = {
   hidden: {
@@ -48,13 +52,13 @@ export default function Certificates() {
             <div className="certificate-row1">
               <div className="certificate-item1">
                 <Item
-                  original={imgjsbig}
-                  thumbnail={imgjs}
+                  original={imgpythonbig}
+                  thumbnail={imgpython}
                   width="1024"
                   height="768"
                 >
                   {({ ref, open }) => (
-                    <img ref={ref} onClick={open} src={imgjs} />
+                    <img ref={ref} onClick={open} src={imgpython} />
                   )}
                 </Item>
               </div>
@@ -86,13 +90,13 @@ export default function Certificates() {
             <div className="certificate-row2">
               <div className="certificate-item4">
                 <Item
-                  original={imgjsbig}
-                  thumbnail={imgjs}
+                  original={imgcssbig}
+                  thumbnail={imgcss}
                   width="1024"
                   height="768"
                 >
                   {({ ref, open }) => (
-                    <img ref={ref} onClick={open} src={imgjs} />
+                    <img ref={ref} onClick={open} src={imgcss} />
                   )}
                 </Item>
               </div>

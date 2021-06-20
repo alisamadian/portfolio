@@ -31,11 +31,12 @@
   max-width: 35%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .main-col-text {
   font-size: 18px;
+  margin-top: 5%;
 }
 
 .second-row {
@@ -83,6 +84,7 @@
 }
 .Third-row-card {
   transition: all 0.4s ease-in-out;
+  min-height: 470px;
 }
 .Third-row-card:hover {
   transform: scale(1.05);
@@ -106,8 +108,7 @@
 }
 
 .react-card {
-  max-width: 200px;
-  min-height: 240px;
+  min-height: 200px;
   margin: 2% 2% 2% 2%;
   border-radius: 15px;
   box-shadow: 0px 0px 10px rgba(46, 46, 46, 0.876);
@@ -163,4 +164,7 @@
   color: white;
   font-size: 2rem;
   border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
 }

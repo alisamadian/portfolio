@@ -126,6 +126,12 @@ function Contact() {
           </a>
         </div>
       </motion.div>
+      <div className="contact-subscription-container">
+        <p className="contact-subscription-heading">
+          Join Me! It Must Be Done...
+        </p>
+        <p className="contact-subscription-text">alisamadian40@gmail.com</p>
+      </div>
     </div>
   );
 }

@@ -52,25 +52,6 @@ const containerVariant = {
   },
 };
 
-const hoverVariant = {
-  hoverCertificates: {
-    scale: 1.05,
-    boxShadow: "0 0 8px #fff",
-    transition: {
-      yoyo: Infinity,
-    },
-  },
-  hoverWorks: {
-    scale: 1.05,
-    boxShadow: "0 0 15px #fff",
-    cursor: "pointer",
-    transition: {
-      duration: 0.4,
-      yoyo: Infinity,
-    },
-  },
-};
-
 const figureVariant = {
   initial: {
     rotate: -180,
@@ -144,9 +125,10 @@ function Home() {
               </motion.div>
             </div>
             <div className="main-col-text">
-              Hi, i'm ali samadian. i'm a React web developer.I am intrested in
-              designing UI content for all platforms. i like developing browsers
-              extentions. i also familiar with Ionic, React native and Electron.
+              Hi, I'm ali samadian. I'm a React web developer. I am interested
+              in designing UI content for all platforms. I like developing
+              browser extensions. I am also familiar with Ionic, Recoil, and
+              node.js.
             </div>
           </div>
         </motion.div>
@@ -155,13 +137,7 @@ function Home() {
             <img src={imgext} Width="93%" alt="" />
             <div className="ext-but-holder">
               <Link to="/components/Works">
-                <motion.button
-                  className="ext-but"
-                  variants={hoverVariant}
-                  whileHover="hoverWorks"
-                >
-                  See more of my works
-                </motion.button>
+                <button className="ext-but">See more of my works</button>
               </Link>
             </div>
           </div>
@@ -170,56 +146,65 @@ function Home() {
           <div className="third-row-container">
             <Card
               className="Third-row-card"
-              border="secondary"
               style={{
-                width: "18rem",
+                width: "21rem",
                 textAlign: "center",
-                margin: "0 2% 0 2%",
+                borderRadius: "15px",
+                border: "solid 2px #6b6b6b",
+                minHeight: "545px",
               }}
             >
               <Card.Img variant="top" src={imghtml} />
               <Card.Body>
-                <Card.Title>HTML</Card.Title>
-                <Card.Text>
-                  HTML provides the basic structure of sites, which is enhanced
-                  by other technologies like CSS and JavaScript.
+                <Card.Title style={{ fontWeight: "bold" }}>HTML</Card.Title>
+                <Card.Text style={{ textAlign: "justify" }}>
+                  HTML provides the basic structure of sites, Every page that we
+                  witness on the world wide web is written using a version of
+                  HTML code.
                 </Card.Text>
               </Card.Body>
             </Card>
 
             <Card
               className="Third-row-card"
-              border="secondary"
               style={{
-                width: "18rem",
+                width: "21rem",
                 textAlign: "center",
-                margin: "0 2% 0 2%",
+                borderRadius: "15px",
+                border: "solid 2px #6b6b6b",
+                minHeight: "545px",
               }}
             >
               <Card.Img variant="top" src={imgcss} />
               <Card.Body>
-                <Card.Title>CSS</Card.Title>
-                <Card.Text>
-                  CSS is used to control presentation, formatting, and layout.
+                <Card.Title style={{ fontWeight: "bold" }}>CSS</Card.Title>
+                <Card.Text style={{ textAlign: "justify" }}>
+                  CSS is for describing the presentation of pages including
+                  colors, layout, and fonts. It allows one to adapt the
+                  presentation to different types of devices.
                 </Card.Text>
               </Card.Body>
             </Card>
 
             <Card
               className="Third-row-card"
-              border="secondary"
               style={{
-                width: "18rem",
+                width: "21rem",
                 textAlign: "center",
-                margin: "0 2% 0 2%",
+                borderRadius: "15px",
+                border: "solid 2px #6b6b6b",
+                minHeight: "545px",
               }}
             >
               <Card.Img variant="top" src={imgjs} />
               <Card.Body>
-                <Card.Title>Java Script</Card.Title>
-                <Card.Text>
+                <Card.Title style={{ fontWeight: "bold" }}>
+                  Java Script
+                </Card.Title>
+                <Card.Text style={{ textAlign: "justify" }}>
                   JavaScript is used to control the behavior of different
-                  elements.
+                  elements. i.e. anything that moves, refreshes, or changes on
+                  screen without requiring to manually reload a web page
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -292,7 +277,7 @@ function Home() {
               </div>
             </div>
             <div className="fourth-row-one">
-              <div className="react-card last-card">
+              <div className="react-card fourth-eow-last-card">
                 <img src={imgreact} width="150px;" alt="" />
                 <p className="react-text">React</p>
               </div>
@@ -315,18 +300,13 @@ function Home() {
             <div className="fifth-row-text">
               <h1>Hello, world!</h1>
               <p>
-                This is a simple hero unit, a simple jumbotron-style component
-                for calling extra attention to featured content or information.
+                While I was serving my military service in last two years, I
+                tried to make the best out of those days and achieve a few
+                certificates in web development.
               </p>
               <p>
                 <Link to="/components/Certificates">
-                  <motion.button
-                    className="fifth-row-but"
-                    variants={hoverVariant}
-                    whileHover="hoverWorks"
-                  >
-                    See my certificates
-                  </motion.button>
+                  <button className="fifth-row-but">See my certificates</button>
                 </Link>
               </p>
             </div>

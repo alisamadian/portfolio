@@ -96,56 +96,12 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <section className="social-media">
-        <div className="footer-logo">
-          <Link to="/components/Home" className="social-logo">
-            To Top
-          </Link>
-        </div>
-        <small className="website-rights">2021</small>
-        <div className="social-icons">
-          <Link
-            className="social-icon-link facebook"
-            to="/"
-            target="_blank"
-            aria-label="Facebook"
-          >
-            <i className="fab fa-facebook-f" />
-          </Link>
-          <Link
-            className="social-icon-link instagram"
-            to="/"
-            target="_blank"
-            aria-label="Instagram"
-          >
-            <i className="fab fa-instagram" />
-          </Link>
-          <Link
-            className="social-icon-link youtube"
-            to="/"
-            target="_blank"
-            aria-label="Youtube"
-          >
-            <i className="fab fa-youtube" />
-          </Link>
-          <Link
-            className="social-icon-link twitter"
-            to="/"
-            target="_blank"
-            aria-label="Twitter"
-          >
-            <i className="fab fa-twitter" />
-          </Link>
-          <Link
-            className="social-icon-link twitter"
-            to="/"
-            target="_blank"
-            aria-label="LinkedIn"
-          >
-            <i className="fab fa-linkedin" />
-          </Link>
-        </div>
-      </section>
+      <div className="totop-year-container">
+        <a href="/components/Home" className="totop-but">
+          To Top
+        </a>
+        <small className="footer-year">2021</small>
+      </div>
     </div>
   );
 }

@@ -1,19 +1,15 @@
 import React from "react";
 import "./Certificates.css";
 import { motion } from "framer-motion";
+import Carousel from "nuka-carousel";
 
-import imgjsbig from "./ali/certificates/certificate-js-big.jpg";
-import imgjs from "./ali/certificates/certificate-js.jpg";
-import imgresponsivebig from "./ali/certificates/certificate-responsive-big.jpg";
-import imgresponsive from "./ali/certificates/certificate-responsive.jpg";
 import imghtmlbig from "./ali/certificates/certificate-html-big.jpg";
-import imghtml from "./ali/certificates/certificate-html.jpg";
-import imgreactbig from "./ali/certificates/certificate-react-big.jpg";
-import imgreact from "./ali/certificates/certificate-react.jpg";
 import imgcssbig from "./ali/certificates/certificate-css-big.jpg";
-import imgcss from "./ali/certificates/certificate-css.jpg";
+import imgjsbig from "./ali/certificates/certificate-js-big.jpg";
+import imgresponsivebig from "./ali/certificates/certificate-responsive-big.jpg";
+import imgreactbig from "./ali/certificates/certificate-react-big.jpg";
+import imgphpbig from "./ali/certificates/certifice-php-big.jpg";
 import imgpythonbig from "./ali/certificates/certificate-python-big.jpg";
-import imgpython from "./ali/certificates/certificate-python.jpg";
 
 const containerVariant = {
   hidden: {
@@ -44,7 +40,15 @@ export default function Certificates() {
         animate="visible"
         exit="exit"
       >
-        
+        <Carousel  dragging={true} cellSpacing={10} speed={700}>
+          <img src={imghtmlbig} className="certificate-img" />
+          <img src={imgcssbig} className="certificate-img" />
+          <img src={imgjsbig} className="certificate-img" />
+          <img src={imgresponsivebig} className="certificate-img" />
+          <img src={imgreactbig} className="certificate-img" />
+          <img src={imgphpbig} className="certificate-img" />
+          <img src={imgpythonbig} className="certificate-img" />
+        </Carousel>
       </motion.div>
     </div>
   );

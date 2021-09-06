@@ -1,7 +1,7 @@
 .contact-container {
   max-width: 100%;
   min-height: 560px;
-  background-color: #a7a7a7e5;
+  background-color: #b7b7b7;
   font-family: "Quicksand", sans-serif;
   overflow: hidden;
 }
@@ -14,8 +14,8 @@
   text-align: center;
   display: block;
   margin: 0 0 1% 0;
-  padding: 5% 0 4% 0;
-  text-shadow: 0 0px 16px rgb(246, 246, 246);
+  padding: 2% 0 2% 0;
+  text-shadow: 0 0px 5px #6b6b6b;
   font-size: 3rem;
   font-weight: 700;
 }
@@ -31,29 +31,45 @@
   transition: all 0.4s ease-in-out;
 }
 .note-pic:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
-.note-btn {
+.contact-form {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  font-size: 1.2rem;
 }
-.note-btn > Button {
-  width: 98%;
-  font-size: 1.5rem;
+.contact-input {
+  width: 500px;
+  height: 40px;
+  margin: 2% 0 2% 0;
+  padding: 1% 2% 1% 2%;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px #006766;
 }
-.note-form {
-  margin: 2% 0;
+.contact-input:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px #fff5ba;
 }
-
-.social {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
+.contact-input:nth-child(3) {
+  height: 150px;
 }
-
+.contact-input-button {
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  height: 40px;
+  background-color: #006766;
+  color: #fff5ba;
+}
+.contact-input-button:hover {
+  box-shadow: 0px 0px 5px #006766;
+  cursor: pointer;
+}
+.contact-input-button:focus {
+  outline: none;
+}
 .contact-subscription-container {
   margin-bottom: 4% 0;
   text-align: center;
@@ -61,7 +77,6 @@
   padding: 4% 0;
   color: #fff;
 }
-
 .contact-subscription-container > p {
   font-family: "Quicksand", sans-serif;
   color: black;
@@ -71,7 +86,6 @@
   margin-bottom: 24px;
   font-size: 24px;
 }
-
 .contact-subscription-text {
   margin-bottom: 24px;
   font-size: 20px;

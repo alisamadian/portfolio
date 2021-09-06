@@ -8,7 +8,6 @@ import imgside from "./ali/store2.png";
 import imgside2 from "./ali/store3.png";
 import imgside3 from "./ali/store4.png";
 import imgside4 from "./ali/avatar.jpg";
-import imgside5 from "./ali/arrowdown.png";
 import imgext from "./ali/ext.png";
 import imghtml from "./ali/html.png";
 import imgcss from "./ali/css.png";
@@ -72,37 +71,6 @@ function Home() {
           initial="hidden"
           animate="visible"
         >
-          <div className="home-side-col">
-            <Figure>
-              <div className="side-figures">
-                <Figure.Image
-                  width={207}
-                  height={448}
-                  alt="207448"
-                  src={imgside}
-                />
-
-                <Figure.Image
-                  width={207}
-                  height={448}
-                  alt="207448"
-                  src={imgside2}
-                />
-
-                <Figure.Image
-                  width={207}
-                  height={448}
-                  alt="207448"
-                  src={imgside3}
-                />
-              </div>
-              <br />
-              <div className="side-caption">
-                Go deep <br /> <img src={imgside5} width={30} alt="img" />
-              </div>
-            </Figure>
-          </div>
-
           <div className="home-main-col">
             <div className="main-col-fig">
               <motion.div
@@ -130,6 +98,33 @@ function Home() {
               browser extensions. I am also familiar with Ionic, Recoil, and
               node.js.
             </div>
+          </div>
+          <div className="home-side-col">
+            <Figure>
+              <div className="side-figures">
+                <Figure.Image
+                  width={207}
+                  height={448}
+                  alt="207448"
+                  src={imgside}
+                />
+
+                <Figure.Image
+                  width={207}
+                  height={448}
+                  alt="207448"
+                  src={imgside2}
+                />
+
+                <Figure.Image
+                  width={207}
+                  height={448}
+                  alt="207448"
+                  src={imgside3}
+                />
+              </div>
+            </Figure>
+
           </div>
         </motion.div>
         <div className="second-row">

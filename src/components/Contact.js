@@ -1,16 +1,9 @@
 import React from "react";
 import "./Contact.css";
-import Form from "react-bootstrap/Form";
-import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
+import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
 
 import imgnote from "./ali/contact/note.png";
-import imggithub from "./ali/contact/github.svg";
-import imglinkedin from "./ali/contact/linkedin.png";
-import imginstagram from "./ali/contact/instagram.png";
-import imgtwitter from "./ali/contact/twitter.png";
-import imgfacebook from "./ali/contact/facebook.svg";
 
 const containerVariant = {
   hidden: {
@@ -31,6 +24,37 @@ const containerVariant = {
 };
 
 function Contact() {
+  
+  
+  function sendEmail(e) {
+    e.preventDefault();
+    const validateName = document.forms["Form"]["user_name"].value;
+    const validateEmail = document.forms["Form"]["user_email"].value;
+    const validateMessage = document.forms["Form"]["message"].value;
+    console.log(validateName);
+    if (validateName == null || validateName == "",validateEmail == null || validateEmail == "",validateMessage == null || validateMessage == "") {
+      alert("Please Fill All The Fields");
+      return false;
+    }
+    emailjs
+      .sendForm(
+        "service_jib6qa5",
+        "template_q6q2acg",
+        e.target,
+        "user_VjpVxRekIA6ZWAg3Uyo83"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    setTimeout(function () {
+      e.target.reset();
+    }, 500);
+  }
   return (
     <div className="contact-container">
       <motion.div
@@ -40,95 +64,42 @@ function Contact() {
         exit="exit"
       >
         <div className="note">
-          <h1 className="note-header">Leave me a note!</h1>
+          <h1 className="note-header">Feel Free To Leave me a note!</h1>
+
           <div className="note-container">
             <img src={imgnote} alt="" className="note-pic" />
-
-            <Form>
-              <Form.Row>
-                <Col>
-                  <Form.Control
-                    placeholder="first name"
-                    className="note-form"
-                  />
-                </Col>
-                <Col>
-                  <Form.Control placeholder="last name" className="note-form" />
-                </Col>
-              </Form.Row>
-              <Form.Row>
-                <Col>
-                  <Form.Control
-                    type="email"
-                    placeholder="email"
-                    className="note-form"
-                  />
-                </Col>
-              </Form.Row>
-              <Form.Row>
-                <Col>
-                  <Form.Control
-                    placeholder="your note..."
-                    as="textarea"
-                    rows={3}
-                    className="note-form"
-                  />
-                </Col>
-              </Form.Row>
-              <Form.Row className="note-btn">
-                <Button variant="primary" type="submit">
-                  Submit
-                </Button>
-              </Form.Row>
-            </Form>
+            <form
+              name="Form"
+              className="contact-form"
+              onSubmit={sendEmail}
+            >
+              <input
+                className="contact-input"
+                type="text"
+                placeholder="Name"
+                name="user_name"
+              />
+              <input
+                className="contact-input"
+                type="email"
+                placeholder="Email"
+                name="user_email"
+              />
+              <textarea
+                className="contact-input"
+                placeholder="Your Message"
+                name="message"
+              />
+              <button className="contact-input-button" type="submit">
+                send
+              </button>
+            </form>
           </div>
-        </div>
-        <div className="social">
-          <a
-            className="react-card"
-            href="https://github.com/alisamadian"
-            target="_blank"
-          >
-            <img src={imggithub} width="200px;" alt="" />
-            <p className="react-text">Github</p>
-          </a>
-          <a
-            className="react-card"
-            href="https://www.linkedin.com/in/ali-samadian-27281016b/"
-            target="_blank"
-          >
-            <img src={imglinkedin} width="200px;" alt="" />
-            <p className="react-text">Linkedin</p>
-          </a>
-          <a
-            className="react-card"
-            href="https://www.instagram.com/ali_samadian/"
-            target="_blank"
-          >
-            <img src={imginstagram} width="200px;" alt="" />
-            <p className="react-text">Instagram</p>
-          </a>
-          <a
-            className="react-card"
-            href="https://twitter.com/josephstalinbig"
-            target="_blank"
-          >
-            <img src={imgtwitter} width="200px;" alt="" />
-            <p className="react-text">Twitter</p>
-          </a>
-          <a
-            className="react-card"
-            href="https://www.facebook.com/ali.samadian/"
-            target="_blank"
-          >
-            <img src={imgfacebook} width="200px;" alt="" />
-            <p className="react-text">Facebook</p>
-          </a>
         </div>
       </motion.div>
       <div className="contact-subscription-container">
         <p className="contact-subscription-heading">
-          Join Me! It Must Be Done...
+        Help me improve my portfolio with your suggestions...
         </p>
         <p className="contact-subscription-text">alisamadian40@gmail.com</p>
       </div>

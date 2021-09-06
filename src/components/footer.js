@@ -98,7 +98,7 @@ function Footer() {
       </div>
       <div className="totop-year-container">
         <a href="/components/Home" className="totop-but">
-          To Top
+          To Top of The Home
         </a>
         <small className="footer-year">2021</small>
       </div>

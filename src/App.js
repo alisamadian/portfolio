@@ -2,7 +2,6 @@ import "./App.css";
 import Nav from "./components/nav";
 import { AnimatePresence } from "framer-motion";
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
   Redirect,

@@ -15,15 +15,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #6b6b6b 0%, #b7b7b7d5);
+  background-color: #6b6b6b;
+
   font-family: "Quicksand", sans-serif;
   font-size: 1.3rem;
   z-index: 999999999;
 }
 
 .navbar-logo {
-  color: #fff5ba;
-  justify-self: start;
+  min-width: 400px;
+  color: #ffd700;
+  padding: 1% 0 1% 2%;
+  justify-self: left;
   cursor: pointer;
   align-self: center;
   font-size: 2rem;
@@ -50,7 +53,7 @@
 }
 
 .nav-links {
-  color: #fff5ba;
+  color: #ffd700;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -78,6 +81,8 @@
 .menu-icon {
   display: none;
 }
+
+
 @media screen and (max-width: 960px) {
   .NavbarItems {
     position: relative;
@@ -149,5 +154,6 @@
   }
   .navbar-logo {
     font-size: 1rem;
+    min-width: 200px;
   }
 }

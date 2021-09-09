@@ -11,7 +11,7 @@ import imgfacebook from "./ali/contact/facebook.svg";
 function Footer() {
   return (
     <div className="footer-container">
-      <section className="footer-markers">
+
         <div className="sixth-row">
           <div className="sixth-row-container"></div>
           <div className="sixth-row-1">
@@ -71,7 +71,6 @@ function Footer() {
             </a>
           </div>
         </div>
-      </section>
       <div className="footer-links">
         <ul className="links">
           <li className="nav-item">
@@ -97,8 +96,8 @@ function Footer() {
         </ul>
       </div>
       <div className="totop-year-container">
-        <a href="/components/Home" className="totop-but">
-          To Top of The Home
+        <a href="#top" className="totop-but">
+          To Top
         </a>
         <small className="footer-year">2021</small>
       </div>

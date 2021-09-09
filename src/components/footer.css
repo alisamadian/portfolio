@@ -1,7 +1,6 @@
 .footer-container {
-  background-color: rgb(27, 27, 27);
-  background-image: linear-gradient(to bottom, #b7b7b7, #6b6b6b);
-  padding: 4rem 0 4rem 0;
+  background-color: #b7b7b7;
+  padding: 6rem 0 4rem 0;
 }
 
 .footer-links {
@@ -10,7 +9,8 @@
 }
 
 .footer-link {
-  color: #fff5ba;
+  color: #ffd700;
+  text-shadow: 0px 0px 5px rgb(56, 56, 56);
   font-weight: bold;
   font-size: 1.6rem;
   display: flex;
@@ -78,7 +78,7 @@
   min-height: 150px;
 
   border-radius: 15%;
-  background-color: #fff5ba;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,16 +110,23 @@
   margin-right: 3rem;
 }
 .totop-year-container {
+  margin-top: 3%;
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
 }
 .totop-but {
   color: #fff5ba;
+  background-color: #006766;
+  border-radius: 15px;
+  padding: 10px 2% 1% 2%;
+  box-shadow: 0px 0px 10px #006766;
 }
 .totop-but:hover {
   text-decoration: none;
-  color: #9dbdbc;
+  color: #006766;
+  background-color: #fff5ba;
+  box-shadow: 0px 0px 10px #fff5ba;
 }
 .footer-year {
   display: block;
@@ -136,7 +143,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
   .footer-card {
     margin: 2% 0 2% 0;
@@ -146,5 +152,9 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+  }
+  .totop-but {
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0px 0px 10px #fff5ba;
   }
 }

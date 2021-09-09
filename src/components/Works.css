@@ -1,0 +1,46 @@
+.work {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./ali/5.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-container {
+
+  padding: 5%;
+  background-color: rgba(77, 77, 77, 0.705);
+
+  color: #ffd700;
+
+  font-weight: bold;
+  text-shadow: 0 0 5px #6b6b6b;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(41, 41, 41, 0.712);
+  transition: all 0.3s ease-out;
+
+}
+
+@media screen and (max-width: 960px) {
+  .work {
+    height: 30vh;
+  }
+  .work-container {
+    width: 95%;
+    padding: 0%;
+    background-color: none;
+    margin-top: 0%;
+    color: #ffd700;
+    text-shadow: 0 0 5px #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 0px;
+    
+  }
+}
+
+

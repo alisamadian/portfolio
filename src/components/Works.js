@@ -2,7 +2,6 @@ import React from "react";
 import "./Works.css";
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 
-
 const containerVariant = {
   hidden: {
     x: "100vw",
@@ -24,8 +23,16 @@ const containerVariant = {
 
 export default function Ali() {
   return (
-    <div className="certificate-container">
-      
-    </div>
+    <motion.div
+      className="work"
+      variants={containerVariant}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
+      <div className="work-container">
+        <h1>I'm working on it...</h1>
+      </div>
+    </motion.div>
   );
 }

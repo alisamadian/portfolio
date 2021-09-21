@@ -2,7 +2,7 @@ import React from "react";
 import "./Contact.css";
 import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
-
+import Snowfall from 'react-snowfall';
 import imgnote from "./ali/contact/note.png";
 
 const containerVariant = {
@@ -24,15 +24,17 @@ const containerVariant = {
 };
 
 function Contact() {
-  
-  
   function sendEmail(e) {
     e.preventDefault();
     const validateName = document.forms["Form"]["user_name"].value;
     const validateEmail = document.forms["Form"]["user_email"].value;
     const validateMessage = document.forms["Form"]["message"].value;
     console.log(validateName);
-    if (validateName == null || validateName == "",validateEmail == null || validateEmail == "",validateMessage == null || validateMessage == "") {
+    if (
+      (validateName === null || validateName === "",
+      validateEmail === null || validateEmail === "",
+      validateMessage === null || validateMessage === "")
+    ) {
       alert("Please Fill All The Fields");
       return false;
     }
@@ -57,6 +59,7 @@ function Contact() {
   }
   return (
     <div className="contact-container">
+      <Snowfall color="#006766" snowflakeCount={200} />
       <motion.div
         variants={containerVariant}
         initial="hidden"
@@ -68,11 +71,7 @@ function Contact() {
 
           <div className="note-container">
             <img src={imgnote} alt="" className="note-pic" />
-            <form
-              name="Form"
-              className="contact-form"
-              onSubmit={sendEmail}
-            >
+            <form name="Form" className="contact-form" onSubmit={sendEmail}>
               <input
                 className="contact-input"
                 type="text"
@@ -99,7 +98,7 @@ function Contact() {
       </motion.div>
       <div className="contact-subscription-container">
         <p className="contact-subscription-heading">
-        Help me improve my portfolio with your suggestions...
+          Help me improve my portfolio with your suggestions...
         </p>
         <p className="contact-subscription-text">alisamadian40@gmail.com</p>
       </div>

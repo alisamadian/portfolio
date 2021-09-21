@@ -3,7 +3,7 @@ import Figure from "react-bootstrap/Figure";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import imgside from "./ali/store2.png";
 import imgside2 from "./ali/store3.png";
@@ -25,7 +25,7 @@ import imgmysql from "./ali/mysql.png";
 import imgpython from "./ali/python.png";
 import imgreact from "./ali/react.png";
 import vid1 from "./ali/1.mp4";
-import { Button, Card, Jumbotron } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import "../bootstrap.min.css";
 
 const containerVariant = {
@@ -186,9 +186,9 @@ function Home() {
     <div className="home-container">
       <motion.div variants={containerVariant} exit="exit">
         <div className="theme-changer">
-          <label class="switch" onChange={darkMode}>
+          <label className="switch" onChange={darkMode}>
             <input type="checkbox" />
-            <span class="slider round"></span>
+            <span className="slider round"></span>
           </label>
         </div>
         <motion.div
@@ -257,7 +257,7 @@ function Home() {
         </motion.div>
         <div className="second-row">
           <div className="extention">
-            <img src={imgext} Width="95%" alt="" />
+            <img src={imgext} width="95%" alt="" />
             <div className="ext-but-holder">
               <Link to="/components/Works">
                 <button className="ext-but">See more of my works</button>

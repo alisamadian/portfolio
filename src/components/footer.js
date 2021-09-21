@@ -33,6 +33,7 @@ function Footer() {
               className="footer-card"
               href="https://github.com/alisamadian"
               target="_blank"
+              rel="noreferrer"
             >
               <img src={imggithub} width="160px;" alt="" />
               <p className="footer-text">Github</p>
@@ -41,6 +42,7 @@ function Footer() {
               className="footer-card"
               href="https://www.linkedin.com/in/ali-samadian-27281016b/"
               target="_blank"
+              rel="noreferrer"
             >
               <img src={imglinkedin} width="160px;" alt="" />
               <p className="footer-text">Linkedin</p>
@@ -49,6 +51,7 @@ function Footer() {
               className="footer-card"
               href="https://www.instagram.com/ali_samadian/"
               target="_blank"
+              rel="noreferrer"
             >
               <img src={imginstagram} width="160px;" alt="" />
               <p className="footer-text">Instagram</p>
@@ -57,6 +60,7 @@ function Footer() {
               className="footer-card"
               href="https://twitter.com/josephstalinbig"
               target="_blank"
+              rel="noreferrer"
             >
               <img src={imgtwitter} width="160px;" alt="" />
               <p className="footer-text">Twitter</p>
@@ -65,6 +69,7 @@ function Footer() {
               className="footer-card"
               href="https://www.facebook.com/ali.samadian/"
               target="_blank"
+              rel="noreferrer"
             >
               <img src={imgfacebook} width="160px;" alt="" />
               <p className="footer-text">Facebook</p>

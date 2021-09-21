@@ -7,13 +7,3 @@
   align-items: center;
 }
 
-.loader {
-  min-height: 600vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  position: sticky;
-  top: 45%;
-
-}

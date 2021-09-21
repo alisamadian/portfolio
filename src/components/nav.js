@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./nav.css";
 import { Link } from "react-router-dom";
-import { FlatTree } from "framer-motion";
 
 export default function Nav() {
   const [click, setClick] = useState(false);
@@ -26,7 +25,7 @@ export default function Nav() {
   
   return (
     <>
-      <a id="top"></a>
+      <a id="top" />
       <nav className="navbar">
         <div className="navbar-container">
           <Link

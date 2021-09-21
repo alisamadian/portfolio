@@ -41,13 +41,13 @@ export default function Certificates() {
         exit="exit"
       >
         <Carousel  dragging={true} cellSpacing={10} speed={700}>
-          <img src={imghtmlbig} className="certificate-img" />
-          <img src={imgcssbig} className="certificate-img" />
-          <img src={imgjsbig} className="certificate-img" />
-          <img src={imgresponsivebig} className="certificate-img" />
-          <img src={imgreactbig} className="certificate-img" />
-          <img src={imgphpbig} className="certificate-img" />
-          <img src={imgpythonbig} className="certificate-img" />
+          <img src={imghtmlbig} className="certificate-img" alt="html" />
+          <img src={imgcssbig} className="certificate-img" alt="css"/>
+          <img src={imgjsbig} className="certificate-img" alt="js"/>
+          <img src={imgresponsivebig} className="certificate-img" alt="responsive"/>
+          <img src={imgreactbig} className="certificate-img" alt="react"/>
+          <img src={imgphpbig} className="certificate-img" alt="php"/>
+          <img src={imgpythonbig} className="certificate-img" alt="python"/>
         </Carousel>
       </motion.div>
     </div>
